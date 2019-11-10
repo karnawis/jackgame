@@ -1,2 +1,0 @@
-# jackgame
-Jack game page
