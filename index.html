@@ -2,25 +2,119 @@
 <html>
     <head>
         <title>Jack Game | Orangutan matter.com</title>
-        <style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">        <style>
         body{
             background-color: #0c0d0c;
         }
-        a {
-            color: white;
+        a:hover{
+            color: inherit;
+            text-decoration: none;
+        }
+        #logo {
+            display: block;
+        }
+        h1, h2 {
+            font-size: 2rem;
+        }
+        .small-text {
+            font-size: 1rem;
+        }
+        .bg{
+            background-size: cover;
+            /*background-image: url(assets/Jack-game.jpg);*/
+            background-position: top center;
+            background-repeat: no-repeat;
+            display: flex;
+        }
+        .white {
+            color: #FFF;
+        }
+        .black {
+            color:#0c0d0c;
+        }
+        ul.social-links {
+            list-style: none;
+            padding: 0;
+        }
+        .social-links li {
+            display: inline-block;
+            margin: 1rem;
+        }
+        .social-links a {
+            text-decoration: none;
+        }
+        .social-links i {
+            font-size: 2rem;
+        }
+        .content {
+            min-height: 500px;
+        }
+        .fixed-parallax {
+            position: relative;
+            height: auto;
+            min-height: 60vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 100%;
+        }
+        @media (min-width: 768px) {
+            .fixed-parallax {
+                background-position: center top;
+                background-attachment: fixed;
+                height: 150vh;
+            }
+        }
+        .text-black {
+            background-image: url(assets/jack-text-black.png);
+        }
+        .text-white {
+            background-image: url(assets/jack-text-white.png);
+        }
+        .cicada {
+            background-image: url(assets/cicada.png);
+
+        }
+        .u-padding-top-bottom-20 {
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
         </style>
     </head>
     <body>
-        <h1>Jack Game</h1>
-        <img src="assets/Jack-game.jpg" alt="Jack game poster little boy looking for his purpose in this life" width="100%"/>
-        <p>Social media: </p>
-        <ul>
-            <li>Twitter <a href="https://twitter.com/hashtag/jackgame2020?lang=en">#jackGame2020</a></li>
-            <li>Facebook <a href="https://www.facebook.com/jackgame2020">@jackgame2020</a></li>
-            <li>Instagram <a href="https://www.instagram.com/jackgame2020/">@jackgame2020</a></li>
-            <li>Youtube <a href="https://www.youtube.com/channel/UCzr5pM39JEKz_H55ZKpUseg/featured">@jackgame2020</a></li>
-            <li>Email <a href="mailto:jack@orangutanmatter.com">jack@orangutanmatter.com</a></li>
-        </ul>
+        <header>
+            <div class="container-fluid">
+                <div class="fixed-parallax cicada"></div>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <div class="row u-padding-top-bottom-20 ">
+                    <div class="col-sm-12 col-md-8">
+                        <a id="logo" href="/" aria-label="jack game logo">
+                            <h1 class="white">Jack <br><span class="small-text">by Orangutanmatter games</span></h1>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <h2 class="white">#JackGame2020</h2>
+                        <ul class="social-links">
+                            <li><a class="white" href="https://twitter.com/hashtag/jackgame2020?lang=en" aria-label="#jackGame2020"><i class="white fab fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a class="white" href="https://www.facebook.com/jackgame2020" aria-label="@jackgame2020"><i class="white fab fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a class="white" href="https://www.instagram.com/jackgame2020/" aria-label="@jackgame2020"><i class="white fab fab fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a class="white" href="https://www.youtube.com/channel/UCzr5pM39JEKz_H55ZKpUseg/featured" aria-label="@jackgame2020"><i class="white fab fa-youtube" aria-hidden="true"></i></a></li>
+                            <li><a class="white" href="mailto:jack@orangutanmatter.com" aria-label="jack@orangutanmatter.com"><i class="white far fa-envelope-open" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg content">
+            <div class="container-fluid">
+                <img src="assets/Jack-game.jpg" alt="jack game poster" width="100%" />
+                <img src="assets/jack-text-white.png" alt="jack white text"  width="100%" />
+
+            </div>
+        </section>
     </body>
 </html>
