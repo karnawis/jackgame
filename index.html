@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">        <style>
         body{
             background-color: #0c0d0c;
+            padding-top: 20px;
         }
         a:hover{
             color: inherit;
@@ -27,6 +28,9 @@
             background-repeat: no-repeat;
             display: flex;
         }
+        img {
+            max-width: 1200px;
+        }
         .white {
             color: #FFF;
         }
@@ -39,7 +43,8 @@
         }
         .social-links li {
             display: inline-block;
-            margin: 1rem;
+            margin-right: 20px;
+            margin-top: 20px;
         }
         .social-links a {
             text-decoration: none;
@@ -53,7 +58,7 @@
         .fixed-parallax {
             position: relative;
             height: auto;
-            min-height: 60vh;
+            min-height: 30vh;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -61,9 +66,11 @@
         }
         @media (min-width: 768px) {
             .fixed-parallax {
+                background-size: 80%;
                 background-position: center top;
                 background-attachment: fixed;
-                height: 150vh;
+                min-height: 60vh;
+                height: auto;
             }
         }
         .text-black {
@@ -80,6 +87,9 @@
             padding-top: 20px;
             padding-bottom: 20px;
         }
+        .u-padding-top-20 {
+            padding-top: 20px;
+        }
         </style>
     </head>
     <body>
@@ -88,32 +98,37 @@
                 <div class="fixed-parallax cicada"></div>
             </div>
         </header>
-        <section>
-            <div class="container">
-                <div class="row u-padding-top-bottom-20 ">
-                    <div class="col-sm-12 col-md-8">
-                        <a id="logo" href="/" aria-label="jack game logo">
-                            <h1 class="white">Jack <br><span class="small-text">by Orangutanmatter games</span></h1>
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <h2 class="white">#JackGame2020</h2>
-                        <ul class="social-links">
-                            <li><a class="white" href="https://twitter.com/hashtag/jackgame2020?lang=en" aria-label="#jackGame2020"><i class="white fab fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a class="white" href="https://www.facebook.com/jackgame2020" aria-label="@jackgame2020"><i class="white fab fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a class="white" href="https://www.instagram.com/jackgame2020/" aria-label="@jackgame2020"><i class="white fab fab fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a class="white" href="https://www.youtube.com/channel/UCzr5pM39JEKz_H55ZKpUseg/featured" aria-label="@jackgame2020"><i class="white fab fa-youtube" aria-hidden="true"></i></a></li>
-                            <li><a class="white" href="mailto:jack@orangutanmatter.com" aria-label="jack@orangutanmatter.com"><i class="white far fa-envelope-open" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
+        <section class="container">
+            <div class="row u-padding-top-bottom-20 ">
+                <div class="col-sm-12 col-md-8 u-padding-top-20">
+                    <a id="logo" href="/" aria-label="jack game logo">
+                        <h1 class="white">Jack <i><span class="small-text">by Orangutanmatter games</span></i></h1>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4 u-padding-top-20">
+                    <h2 class="white">#JackGame2020</h2>
+                    <ul class="social-links">
+                        <li><a class="white" href="https://twitter.com/hashtag/jackgame2020?lang=en" aria-label="#jackGame2020"><i class="white fab fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a class="white" href="https://www.facebook.com/jackgame2020" aria-label="@jackgame2020"><i class="white fab fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a class="white" href="https://www.instagram.com/jackgame2020/" aria-label="@jackgame2020"><i class="white fab fab fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a class="white" href="https://www.youtube.com/channel/UCzr5pM39JEKz_H55ZKpUseg/featured" aria-label="@jackgame2020"><i class="white fab fa-youtube" aria-hidden="true"></i></a></li>
+                        <li><a class="white" href="mailto:jack@orangutanmatter.com" aria-label="jack@orangutanmatter.com"><i class="white far fa-envelope-open" aria-hidden="true"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </section>
-        <section class="bg content">
+        <section class="bg-image content">
             <div class="container-fluid">
-                <img src="assets/Jack-game.jpg" alt="jack game poster" width="100%" />
-                <img src="assets/jack-text-white.png" alt="jack white text"  width="100%" />
-
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="assets/Jack-game.jpg" alt="jack game poster"  width="100%" class="img-fluid"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="assets/jack-text-white.png" alt="jack white text"  width="100%" class="img-fluid"/>
+                    </div>
+                </div>
             </div>
         </section>
     </body>
