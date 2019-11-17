@@ -41,7 +41,8 @@
                 height: 50vw;
             }
         }
-        .white {
+        .white, 
+        .white:hover  {
             color: #FFF;
         }
         .black {
@@ -49,6 +50,9 @@
         }
         .center-txt {
             text-align: center;
+        }
+        .underlined-txt {
+            text-decoration: underline;
         }
         ul.social-links {
             list-style: none;
@@ -64,6 +68,9 @@
             text-decoration: none;
         }
         .social-links i {
+            font-size: 15px;
+        }
+        footer .social-links i {
             font-size: 2rem;
         }
         .content {
@@ -116,7 +123,10 @@
             .super-size-mobile {
                 width: 100%;
             }
-        }
+            footer ul.social-links{
+                text-align: center;
+            }
+
         </style>
     </head>
     <body>
@@ -128,18 +138,19 @@
         <section class="container">
             <div class="row u-padding-top-bottom-20 ">
                 <div class="col-sm-12 col-md-8 u-padding-top-20">
-                    <a id="logo" href="/" aria-label="jack game logo">
-                        <h1 class="white">Jack <i><span class="small-text">by Orangutanmatter games</span></i></h1>
-                    </a>
+                    <h1 class="white">Jack <br>
+                    <span class="small-text">You can add Jack game to your</span><br>
+                    <a class="white underlined-txt" href="https://store.steampowered.com/app/1076720/Jack/">Steam wish list</a></h1>
+                    <p class="white"></p>
                 </div>
                 <div class="col-sm-12 col-md-4 u-padding-top-20">
-                    <h2 class="white">#JackGame2020</h2>
+                    <h2 class="white"><a class="white" href="https://www.instagram.com/jackgame2020/">@JackGame2020</a></h2>
                     <ul class="social-links">
-                        <li><a class="white" href="https://twitter.com/hashtag/jackgame2020?lang=en" aria-label="#jackGame2020"><i class="white fab fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a class="white" href="https://www.facebook.com/jackgame2020" aria-label="@jackgame2020"><i class="white fab fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a class="white" href="https://www.instagram.com/jackgame2020/" aria-label="@jackgame2020"><i class="white fab fab fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a class="white" href="https://www.youtube.com/channel/UCzr5pM39JEKz_H55ZKpUseg/featured" aria-label="@jackgame2020"><i class="white fab fa-youtube" aria-hidden="true"></i></a></li>
-                        <li><a class="white" href="mailto:jack@orangutanmatter.com" aria-label="jack@orangutanmatter.com"><i class="white far fa-envelope-open" aria-hidden="true"></i></a></li>
+                        <li><a class="white" href="https://twitter.com/hashtag/jackgame2020?lang=en" aria-label="jackGame2020"><i class="white fab fa-twitter" aria-hidden="true"></i> twitter</a></li>
+                        <li><a class="white" href="https://www.facebook.com/jackgame2020" aria-label="jackgame2020"><i class="white fab fa-facebook" aria-hidden="true"></i> facebook</a></li>
+                        <li><a class="white" href="https://www.instagram.com/jackgame2020/" aria-label="jackgame2020"><i class="white fab fab fa-instagram" aria-hidden="true"></i> instagram</a></li>
+                        <li><a class="white" href="https://www.youtube.com/channel/UCzr5pM39JEKz_H55ZKpUseg/featured" aria-label="@jackgame2020"><i class="white fab fa-youtube" aria-hidden="true"></i> youtube</a></li>
+                        <li><a class="white" href="mailto:jack@orangutanmatter.com" aria-label="jack@orangutanmatter.com"><i class="white far fa-envelope-open" aria-hidden="true"></i> email</a></li>
                     </ul>
                 </div>
             </div>
@@ -156,11 +167,33 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div class="container u-padding-top-20 ">
+                <div class="row u-padding-top-20 ">
+                    <div class="col-md-12 u-padding-top-bottom-20 ">
+                        <figure class="embed-responsive embed-responsive-16by9">
+                            <iframe width="100%" height="auto" class="embed-responsive-item" src="https://www.youtube.com/embed/ozsKNoUk89s"" frameborder="0" allowfullscreen=""></iframe>
+                            <figcaption>More about Orangutan Matter</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer>
             <div class="container u-padding-top-20">
                 <div class="row u-padding-top-20">
                     <div class="col-md-12 u-padding-top-20">
-                        <p class="white center-txt">Created by Saif Jabur <a class="white" href="mailto:hello@orangutanmatter.com">hello@orangutanmatter.com</a></p>
+                        <p class="white center-txt">Created by <i><span class="small-text">by <span class="underlined-txt"><a class="white underlined-txt" href="http://orangutanmatter.com/">Orangutanmatter games studio</a></span></span></i></p>
+                        <p class="white center-txt">Saif Jabur <a class="white  underlined-txt" href="mailto:hello@orangutanmatter.com">hello@orangutanmatter.com</a></p>
+                    </div>
+                    <div class="col-md-12">
+                        <ul class="social-links">
+                            <li><a class="white" href="https://twitter.com/hashtag/jackgame2020?lang=en" aria-label="jackGame2020"><i class="white fab fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a class="white" href="https://www.facebook.com/jackgame2020" aria-label="@jackgame2020"><i class="white fab fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a class="white" href="https://www.instagram.com/jackgame2020/" aria-label="@jackgame2020"><i class="white fab fab fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a class="white" href="https://www.youtube.com/channel/UCzr5pM39JEKz_H55ZKpUseg/featured" aria-label="@jackgame2020"><i class="white fab fa-youtube" aria-hidden="true"></i></a></li>
+                            <li><a class="white" href="mailto:jack@orangutanmatter.com" aria-label="jack@orangutanmatter.com"><i class="white far fa-envelope-open" aria-hidden="true"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
