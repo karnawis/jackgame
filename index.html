@@ -138,6 +138,59 @@
             }
         }
 
+        /* photo gallery */
+        .u-row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .u-column {
+            -ms-flex: 25%; /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .u-column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        .u-column img {
+            /* -webkit-filter: blur(5px); */
+            /* filter: blur(5px); */
+            filter: sepia(50%);
+        }
+
+        .u-column img:hover {
+            /* -webkit-filter: grayscale(1%); 
+            filter: grayscale(1%); */
+            filter: sepia(1%);
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .u-column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .u-column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
         </style>
     </head>
     <body>
@@ -153,57 +206,88 @@
         <div class="fixed-parallax text-white-jack"></div>
     </div>
 </section>
-        <section class="container">
-            <div class="row u-padding-top-bottom-20 ">
-                <div class="col-sm-12 col-md-8 u-padding-top-20">
-                    <h2 class="white">First hand painted animation game ever!</h2>
-                    <h3 class="white"><span class="small-text">You can add Jack game to your</span><br>
-                    <a class="white underlined-txt" href="https://store.steampowered.com/app/1076720/Jack/">Steam wish list</a></h3>
-                    <p class="white">JACK is a game leading players through a thoughtful journey as they travel within a surreal world, exploring
-                        philosophical themes and metaphor. Bringing acrylic painting along with pencil drawings to life, the players
-                        through Jack - a young boy - encounter the meaning and beauty (and despair) that is life.</p>
-                    </p>
-                </div>
-                <div class="col-sm-12 col-md-4 u-padding-top-20">
-                    <h2 class="white"><a class="white" href="https://www.instagram.com/jackgame2020/">@JackGame2020</a></h2>
-                    <ul class="social-links">
-                        <li><a class="white" href="https://twitter.com/hashtag/jackgame2020?lang=en" aria-label="jackGame2020"><i class="white fab fa-twitter" aria-hidden="true"></i> twitter</a></li>
-                        <li><a class="white" href="https://www.facebook.com/jackgame2020" aria-label="jackgame2020"><i class="white fab fa-facebook" aria-hidden="true"></i> facebook</a></li>
-                        <li><a class="white" href="https://www.instagram.com/jackgame2020/" aria-label="jackgame2020"><i class="white fab fab fa-instagram" aria-hidden="true"></i> instagram</a></li>
-                        <li><a class="white" href="https://www.youtube.com/channel/UCzr5pM39JEKz_H55ZKpUseg/featured" aria-label="@jackgame2020"><i class="white fab fa-youtube" aria-hidden="true"></i> youtube</a></li>
-                        <li><a class="white" href="mailto:jack@orangutanmatter.com" aria-label="jack@orangutanmatter.com"><i class="white far fa-envelope-open" aria-hidden="true"></i> email</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div class="container u-padding-top-20">
-                <div class="row u-padding-top-20">
-                    <div class="col-md-12 u-padding-top-20">
-                        <p class="white center-txt">Created by <i><span class="small-text">by <span class="underlined-txt"><a class="white underlined-txt" href="http://orangutanmatter.com/">Orangutanmatter games studio</a></span></span></i></p>
-                        <p class="white center-txt">Sura and Saif <a class="white  underlined-txt" href="mailto:hello@orangutanmatter.com">hello@orangutanmatter.com</a></p>
-                    </div>
-                    <div class="col-md-12">
-                        <ul class="social-links">
-                            <li><a class="white" href="https://twitter.com/hashtag/jackgame2020?lang=en" aria-label="jackGame2020"><i class="white fab fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a class="white" href="https://www.facebook.com/jackgame2020" aria-label="@jackgame2020"><i class="white fab fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a class="white" href="https://www.instagram.com/jackgame2020/" aria-label="@jackgame2020"><i class="white fab fab fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a class="white" href="https://www.youtube.com/channel/UCzr5pM39JEKz_H55ZKpUseg/featured" aria-label="@jackgame2020"><i class="white fab fa-youtube" aria-hidden="true"></i></a></li>
-                            <li><a class="white" href="mailto:jack@orangutanmatter.com" aria-label="jack@orangutanmatter.com"><i class="white far fa-envelope-open" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
+<section class="container">
+    <div class="row u-padding-top-bottom-20 ">
+        <div class="col-sm-12 col-md-8 u-padding-top-20">
+            <h2 class="white">First hand painted game using painting animation!</h2>
+            <h3 class="white"><span class="small-text">You can add Jack game to your</span><br>
+            <a class="white underlined-txt" href="https://store.steampowered.com/app/1076720/Jack/">Steam wish list</a></h3>
+            <p class="white">JACK is a game leading players through a thoughtful journey as they travel within a surreal world, exploring
+                philosophical themes and metaphor. Bringing acrylic painting along with pencil drawings to life, the players
+                through Jack - a young boy - encounter the meaning and beauty (and despair) that is life.</p>
+            </p>
+        </div>
+        <div class="col-sm-12 col-md-4 u-padding-top-20">
+            <h2 class="white"><a class="white" href="https://www.instagram.com/jackgame2020/">@JackGame2020</a></h2>
+            <ul class="social-links">
+                <li><a class="white" href="https://twitter.com/hashtag/jackgame2020?lang=en" aria-label="jackGame2020"><i class="white fab fa-twitter" aria-hidden="true"></i> twitter</a></li>
+                <li><a class="white" href="https://www.facebook.com/jackgame2020" aria-label="jackgame2020"><i class="white fab fa-facebook" aria-hidden="true"></i> facebook</a></li>
+                <li><a class="white" href="https://www.instagram.com/jackgame2020/" aria-label="jackgame2020"><i class="white fab fab fa-instagram" aria-hidden="true"></i> instagram</a></li>
+                <li><a class="white" href="https://www.youtube.com/channel/UCzr5pM39JEKz_H55ZKpUseg/featured" aria-label="@jackgame2020"><i class="white fab fa-youtube" aria-hidden="true"></i> youtube</a></li>
+                <li><a class="white" href="mailto:jack@orangutanmatter.com" aria-label="jack@orangutanmatter.com"><i class="white far fa-envelope-open" aria-hidden="true"></i> email</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="photos">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="u-row">
+                    <div class="u-column">
+                        <img src="/assets/images/egx/2019-egx-jack.jpg" alt="" />                
+                        <img src="/assets/images/egx/2019-egx-teamape-friends-support-1.jpg" alt="" />
+                    </div>   
+                    <div class="u-column">
+                        <img src="/assets/images/others/2019-preparing-for-show.jpg" alt="" />
+                        <img src="/assets/images/egx/2019-egx-cool-dude.jpg" alt="" />
+                    </div>                 
+                    <div class="u-column">
+                        <img src="/assets/images/background-light-orange.jpg" alt="" />
+                        <img src="assets/images/egx/2019-egx-friends.jpg" alt="" />
+                        <img src="/assets/images/background-blue.jpg" alt="" />
+                        <img src="/assets/images/migs/2019-migs-meeting.jpg" alt="" />
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152084884-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-152084884-1');
-        </script>
+                    </div>
+                    <div class="u-column">
+                        <img src="/assets/images/others/2019-preparation-for-egx.jpg" alt=""/>
+                        <img src="/assets/images/migs/2019-migs-jack.jpg" alt="" />
+                        <img src="/assets/images/migs/2019-migs-meeting-interview.jpg" alt="" />
+                        <img src="/assets/images/migs/2019-migs-friends-support-family.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container u-padding-top-20">
+        <div class="row u-padding-top-20">
+            <div class="col-md-12 u-padding-top-20">
+                <p class="white center-txt">Created by <i><span class="small-text">by <span class="underlined-txt"><a class="white underlined-txt" href="http://orangutanmatter.com/">Orangutanmatter games studio</a></span></span></i></p>
+                <p class="white center-txt">Sura and Saif <a class="white  underlined-txt" href="mailto:hello@orangutanmatter.com">hello@orangutanmatter.com</a></p>
+            </div>
+            <div class="col-md-12">
+                <ul class="social-links">
+                    <li><a class="white" href="https://twitter.com/hashtag/jackgame2020?lang=en" aria-label="jackGame2020"><i class="white fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a class="white" href="https://www.facebook.com/jackgame2020" aria-label="@jackgame2020"><i class="white fab fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a class="white" href="https://www.instagram.com/jackgame2020/" aria-label="@jackgame2020"><i class="white fab fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a class="white" href="https://www.youtube.com/channel/UCzr5pM39JEKz_H55ZKpUseg/featured" aria-label="@jackgame2020"><i class="white fab fa-youtube" aria-hidden="true"></i></a></li>
+                    <li><a class="white" href="mailto:jack@orangutanmatter.com" aria-label="jack@orangutanmatter.com"><i class="white far fa-envelope-open" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152084884-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-152084884-1');
+    </script>
 
     </body>
 </html>
