@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Jack Game | Orangutan matter.com</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Baumans&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #0c0d0c;
+            font-family: 'Baumans', cursive;
+            padding-bottom: 100px;
+        }
+        a:hover{
+            color: inherit;
+            text-decoration: none;
+        }
+        #logo {
+            display: block;
+        }
+        h1, h2 {
+            font-size: 35px;
+            text-align: center;
+        }
+        h1.btn {
+            border-width: 6px;
+            margin-top:10px;
+        }
+        h1.btn a {
+            font-size: 35px;
+        }
+        .bg{
+            background-size: cover;
+            background-image: url(/assets/images/jack-game-poster.png);
+            background-position: top center;
+            background-repeat: no-repeat;
+            display: flex;
+            height: 110vw;
+            position: relative;
+        }
+        @media (min-width: 768px) {
+            .bg {
+                height: 50vw;
+            }
+        }
+        .white, 
+        .white:hover  {
+            color: #FFF;
+        }
+        .black {
+            color:#0c0d0c;
+        }
+        .center-txt {
+            text-align: center;
+        }
+        .underlined-txt {
+            text-decoration: underline;
+        }
+        ul.social-links {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        .social-links li {
+            display: inline-block;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            text-decoration: none;
+        }
+        .social-links i {
+            font-size: 15px;
+        }
+        footer .social-links i {
+            font-size: 2rem;
+        }
+        .content {
+            min-height: 500px;
+        }
+        .fixed-parallax {
+            position: relative;
+            height: auto;
+            min-height: 30vh;
+            background-position: center 30px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 100%;
+        }
+        @media (min-width: 768px) {
+            .fixed-parallax {
+                background-size: 80%;
+                background-attachment: fixed;
+                min-height: 60vh;
+                height: auto;
+            }
+        }
+        .img-fluid {
+            width: 100%;
+        }
+        .super-size-mobile {
+            width: 200%;
+        }
+        .text-black-jack {
+            background-image: url(assets/jack-text-black.png);
+        }
+        .text-white-jack {
+            background-image: url(assets/jack-text-white.png);
+        }
+        .cicada {
+            background-image: url(assets/cicada.png);
+
+        }
+        .wrapper-bottom {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+        .u-padding-top-bottom-20 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .u-padding-top-20 {
+            padding-top: 20px;
+        }
+        @media (min-width: 768px) {
+            h1, h2 ,  ul.social-links {
+                text-align: left;
+            }
+            .super-size-mobile {
+                width: 100%;
+            }
+            footer ul.social-links{
+                text-align: center;
+            }
+        }
+
+        /* photo gallery */
+        .u-row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .u-column {
+            -ms-flex: 25%; /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .u-column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        .u-column img {
+            /* -webkit-filter: blur(5px); */
+            /* filter: blur(5px); */
+            filter: sepia(1%);
+        }
+
+        .u-column img:hover {
+            /* -webkit-filter: grayscale(1%); 
+            filter: grayscale(1%); */
+            filter: sepia(40%);
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .u-column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .u-column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .embed-responsive {
+            position: relative;
+            display: block;
+            width: 100%;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        </style>
+    </head>
+    <body>
+        <header class="bg">
+            <div class="wrapper-bottom text-center">
+                <h1 class="white text-center btn btn-outline-dark"><a class="white" href="https://store.steampowered.com/app/1076720/Jack/">
+                 Add JACK to<br>
+                Steam wish list</a></h1>
+            </div>
+        </header>
+<section>
+    <div class="container-fluid">
+        <div class="fixed-parallax text-white-jack"></div>
+    </div>
+</section>
+<section class="container">
+    <div class="row u-padding-top-bottom-20 ">
+        <div class="col-sm-12 col-md-8 u-padding-top-20">
+            <h2 class="white">First hand painted game using painting animation!</h2>
+            <h3 class="white"><span class="small-text">You can add Jack game to your</span><br>
+            <a class="white underlined-txt" href="https://store.steampowered.com/app/1076720/Jack/">Steam wish list</a></h3>
+            <p class="white">JACK is a game leading players through a thoughtful journey as they travel within a surreal world, exploring
+                philosophical themes and metaphor. Bringing acrylic painting along with pencil drawings to life, the players
+                through Jack - a young boy - encounter the meaning and beauty (and despair) that is life.
+            </p>
+            <p class="white">After learning of his impending death, a boy ventures into a vibrant surreal world seeking purpose for his very existence. </p>
+            <p class="white">At its core, JACK is a game following the titular Jack’s exploration of his existence. We come to understand, as he does over the course of the game, that it is not about the destination but rather the journey itself. </p>
+            <quote class="white">"We have two lives, and the second begins when we realize we only have one" Confucius’ philosophical concept </quote>
+        </div>
+        <div class="col-sm-12 col-md-4 u-padding-top-20">
+            <h2 class="white"><a class="white" href="https://www.instagram.com/explore/tags/jack_videogame/">#jack_videogame</a></h2>
+            <ul class="social-links">
+                <li><a class="white" href="https://twitter.com/orangutanmatter?lang=en" aria-label="twitter jack video game"><i class="white fab fa-twitter" aria-hidden="true"></i> twitter</a></li>
+                <li><a class="white" href="https://www.facebook.com/gaming/orangutanmatter" aria-label="facebook jack game"><i class="white fab fa-facebook" aria-hidden="true"></i> facebook</a></li>
+                <li><a class="white" href="https://www.instagram.com/orangutanmatter/" aria-label="instagram jack video game"><i class="white fab fab fa-instagram" aria-hidden="true"></i> instagram</a></li>
+                <li><a class="white" href="https://www.youtube.com/channel/UCzr5pM39JEKz_H55ZKpUseg/featured" aria-label="youtube jack game"><i class="white fab fa-youtube" aria-hidden="true"></i> youtube</a></li>
+                <li><a class="white" href="mailto:jack@orangutanmatter.com" aria-label="jack@orangutanmatter.com"><i class="white far fa-envelope-open" aria-hidden="true"></i> email</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="video">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <figure class="embed-responsive embed-responsive-16by9">
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/yMGtm_uVNSA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                    <figcaption>Jack video game demo</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="white">
+                    About orangutan matter studio
+                </h2>
+                <p class="white">Sura and Saif are passionate about art and video games. Together they founded “orangutan matter” studio with the aim of making purpose-driven video games, with a purpose and a belief that a game is at its core, a human activity and a cultural product. Their mission is to work on projectscraft games that are expressive of the human condition and emotions through art and intellectualism appreciation. Their time spent in Europe and experiencing different cultures and arts has cemented this vision to bring video games towards grandeur and intellectually stimulating experiences. that idea and their vision that many video games can be something more than short lived experiences, and be elevated to grandeur intellectual experiences.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="photos">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="u-row">
+                    <div class="u-column">
+                        <img src="/assets/images/migs/2019-migs.jpg" alt="2019 migs" />
+                        <img src="/assets/images/jack-game-big-tree-orange-background.jpg" alt="jack game big tree green ground and orange background" />
+                        <img src="/assets/images/egx/2019-egx-jack.jpg" alt="2019 egx event jack video game" />                
+                        <img src="/assets/images/egx/EGX-London-april-2019.jpg" alt="2019 egx" />
+                    </div>   
+                    <div class="u-column">
+                        <img src="/assets/images/jack-seasaw-puzzle.gif" alt="seasaw puzzle" />
+                        <img src="/assets/images/egx/2019-egx-show-2.jpg" alt="egx 2019 sura playing" />
+                        <img src="/assets/images/others/2019-preparing-for-show.jpg" alt="egx preparing for the show" />
+                        <img src="/assets/images/others/2014-art-battle-team-4.jpg" alt="egx 2019 show" />
+                    </div>                 
+                    <div class="u-column">
+                        <img src="/assets/images/2019-cambridge.jpg" alt="meeting Diala" />
+                        <img src="/assets/images/jack-orange-bg.gif" alt=" orange background" />
+                        <img src="assets/images/egx/2019-egx-friends.jpg" alt="2019 egx celebrating with friends" />
+                        <img src="/assets/images/background-blue.jpg" alt="background blue" />
+                        <img src="/assets/images/migs/2019-migs-meeting.jpg" alt="migs 2019" />
+
+                    </div>
+                    <div class="u-column">
+                        <img src="/assets/images/others/2019-preparation-for-egx.jpg" alt=""/>
+                        <img src="/assets/images/migs/2019-migs-jack.jpg" alt="" />
+                        <img src="/assets/images/migs/2019-migs-meeting-interview.jpg" alt="" />
+                        <img src="/assets/images/migs/2019-migs-friends-support-family.jpg" alt="" />
+                        <img src="/assets/images/jack-game-scene-mother-tree.jpg" alt="jack game mother tree" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container u-padding-top-20">
+        <div class="row u-padding-top-20">
+            <div class="col-md-12 u-padding-top-20">
+                <p class="white center-txt">Created by <i><span class="small-text">by <span class="underlined-txt"><a class="white underlined-txt" href="http://orangutanmatter.com/">Orangutanmatter games studio</a></span></span></i></p>
+                <p class="white center-txt">We would love to hear from you <a class="white  underlined-txt" href="mailto:jack@orangutanmatter.com">jack@orangutanmatter.com</a></p>
+            </div>
+            <div class="col-md-12">
+                <ul class="social-links">
+                    <li><a class="white" href="https://twitter.com/orangutanmatter?lang=en" aria-label="jackGame2020"><i class="white fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a class="white" href="https://www.facebook.com/gaming/orangutanmatter" aria-label="facebook jack game"><i class="white fab fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a class="white" href="https://www.instagram.com/orangutanmatter/" aria-label="jack game"><i class="white fab fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a class="white" href="https://www.youtube.com/channel/UCzr5pM39JEKz_H55ZKpUseg/featured" aria-label="jack game youtube"><i class="white fab fa-youtube" aria-hidden="true"></i></a></li>
+                    <li><a class="white" href="mailto:jack@orangutanmatter.com" aria-label="jack@orangutanmatter.com"><i class="white far fa-envelope-open" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152084884-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-152084884-1');
+    </script>
+
+    </body>
+</html>
